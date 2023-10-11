@@ -1,0 +1,50 @@
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-input {
+  padding-right: 16px;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  padding-left: 4px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: var(--chakra-colors-white-50);
+  color: #B7B7B7;
+  font-weight: 400;
+  max-width: 150px;
+  text-align: center;
+}
+
+.dropdown-input:focus {
+  box-shadow: none;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  /* background-color: rgb(73 49 82 / 100%); */
+  background-color: var(--chakra-colors-gray-glass);
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 10;
+}
+
+.dropdown-list-item {
+  padding: 4px;
+  padding-inline: 8px;
+  cursor: pointer;
+  color: var(--chakra-colors-gray-100);
+  font-size: 14px;
+}
+
+.dropdown-list-item:hover {
+  background: var(--chakra-colors-white-200);
+  color: white;
+}

@@ -1,0 +1,14 @@
+.tabs-dropdown {
+    background-color: var(--chakra-colors-gray-glass);
+    color: var(--chakra-colors-gray-100);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tabs-dropdown-menu:hover {
+    transition: 0.3s ease;
+    padding-left: 22px !important;
+    background: var(--chakra-colors-white-200);
+    color: white;
+}

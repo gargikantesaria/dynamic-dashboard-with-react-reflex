@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+*:focus-visible,
+*:focus {
+  outline: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #535353;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+:root {
+  --white: #ffffff;
+  --bgBlack: #151517;
+  --red: #ffffff0f;
+}
+
+body {
+  background: var(--bgBlack) !important;
+  color: var(--white) !important;
+}
+
+.icon {
+  color: #b7b7b7;
+  cursor: pointer;
+  stroke-width: 1.5 !important;
+}
+
+.news::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+}
+.swap-list::-webkit-scrollbar {
+  width: 0px !important;
+  height: 3px !important;
+}
+
+svg:hover {
+  color: white !important;
+}
+
+.leftFlow::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.leftFlow::-webkit-scrollbar {
+  width: 0px !important;
+}
+/* Spinner */
+
+
+/* for dashboard component */
+.dashboardTabs {
+  border: 1px solid #25272b;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.2));
+  border-radius: 6px !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.dashboardTabs.react-tabs__tab--selected {
+  background: #004bdd !important;
+  color: #ffffff !important;
+  border-color: #25272b !important;
+}
+
+.dashboardTabs.react-tabs__tab--selected .editIcon {
+  display: inline-block !important;
+}
+
+.min-width-150px {
+  min-width: 150px !important;
+}
+
+.min-width-140px {
+  min-width: 140px !important;
+}
+
+.react-grid-layout {
+  overflow: hidden;
+}
+
+/*Workbench*/
+cq-context {
+  overflow: hidden !important;
+  /* width: calc(100vw-90px) !important;
+  height: calc(100vh-90px) !important; */
+  /* position: relative !important; */
+}
+cq-dialog {
+  position: absolute !important;
+  margin: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+/* compact dashboard layout tab for laptop devices */
+
+@media only screen and (min-width: 1280px) and (max-width: 1419.99px) {
+  .dashboardLayoutName {
+    max-width: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 14px;
+  }
+
+  .compactDashboardTab {
+    min-width: 100px !important;
+    line-height: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 1420px) and (max-width: 1530.99px) {
+  .dashboardLayoutName {
+    max-width: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 14px;
+  }
+
+  .compactDashboardTab {
+    min-width: 115px !important;
+    line-height: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 1531px) and (max-width: 1730px) {
+  .dashboardLayoutName {
+    max-width: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 14px;
+  }
+
+  .compactDashboardTab {
+    min-width: 125px !important;
+    line-height: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 1731px) and (max-width: 1800px) {
+  .dashboardLayoutName {
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 14px;
+  }
+
+  .compactDashboardTab {
+    min-width: 145px !important;
+    line-height: 10px !important;
+  }
+}
+
+/* compact dashboard layout tab for device width : 1024px to 1280px */
+.lgCompactDashTabBtw5to7 {
+  min-width: 110px !important;
+  line-height: 10px !important;
+}
+
+.lgCompactDashTabBtw5to7 .layoutName {
+  max-width: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 14px;
+}
+
+.lgCompactDashTabBtw8to10 {
+  min-width: 84px !important;
+  line-height: 10px !important;
+  margin-right: 0.5rem !important;
+}
+
+.lgCompactDashTabBtw8to10 .layoutName {
+  max-width: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* compact dashboard layout tab for device width : 992px to 1024px */
+
+.lgSmallCompactDashTabBtw8to10 {
+  min-width: 81px !important;
+  line-height: 10px !important;
+  margin-right: 0.5rem !important;
+}
+
+.lgSmallCompactDashTabBtw8to10 .layoutName {
+  max-width: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* compact dashboard layout tab for device width : 768px to 992px */
+
+.mdCompactDashTabBtw4to7 {
+  min-width: 70px !important;
+  line-height: 10px !important;
+  margin-right: 0.5rem !important;
+}
+
+.mdCompactDashTabBtw4to7 .layoutName {
+  max-width: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 14px;
+  display: inline-block;
+}
+
+.mdCompactDashTabBtw8to10 {
+  min-width: 58px !important;
+  line-height: 10px !important;
+  margin-right: 0.5rem !important;
+}
+
+.mdCompactDashTabBtw8to10 .layoutName {
+  max-width: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 14px;
+  display: inline-block;
+}
+
+.mdCompactDashTabBtw8to10 .editIcon {
+  width: 12px !important;
+  height: 12px !important;
+  top: 9px;
+  right: 0.25rem !important;
+}
+
+.mdLargeDashTabBtw8to10 {
+  min-width: 70px !important;
+}
+
+.mdLargeDashTabBtw8to10 .layoutName {
+  max-width: 45px !important;
+  width: calc(100%) !important;
+  /*height:  100% !important; */
+}
+
+/* for react-reflex splitter */
+.reflex-splitter {
+  z-index: 0 !important;
+  background-color: #151517 !important;
+  color: #151517 !important;
+  border: 1px solid #151517 !important;
+  padding: 2px !important;
+}
+
+/*trying to change color of candlestic*/
+.stx_candle_up {
+  fill: #004bdd; /* green */
+}
+
+/* for alert page status tabs */
+
+.alertStatusTabs {
+  color: #b7b7b7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.alertStatusTabs.react-tabs__tab--selected {
+  background: #43434a !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+}
+
+.neutrinoPopup {
+  font-family: "Ubuntu Mono", monospace !important;
+}
+
+
+/* table css */
+.css-v2hupa-MuiTypography-root{
+  max-width: 100vw !important;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+cq-context:not([crosssection-active]) .ciq-search {
+  width: 130px;
+}
+
+cq-context:not([crosssection-active]) .toggle-options {
+  display: inherit;
+}
+
+.ciq-night {
+  background: none !important;
+  background: rgba(33, 33, 36, 0.67);
+  border: 1px solid #27272c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(23px);
+}
+.ciq-night cq-study-legend cq-section-dynamic{
+  background: rgba(26, 29, 32, 0.67);
+  border: 1px solid #27272c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(23px);
+}
+
+.ciq-night .stx-holder cq-study-legend{
+  background: rgba(33, 33, 36, 0.67) !important;
+  border: 1px solid #27272c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(3px);
+  border-top: none;
+ 
+}
+.ciq-night cq-chart-title{
+  background: rgba(33, 33, 36, 0.67) !important;
+  border: 1px solid #27272c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(3px);
+  border-top: none;
+}
+
+.stx_candle_shadow_up,
+.stx_bar_even {
+  color: #68AEA2 !important;
+}
+.stx_candle_up,
+.stx_line_up {
+  border-left-color: #68AEA2 !important;
+  color: #68AEA2 !important;
+}
+.stx_candle_shadow_down,
+.stx_bar_even {
+  color: #AE6868 !important;
+}
+
+.stx_candle_down,
+.stx_line_down {
+  border-left-color: #AE6868 !important;
+  color: #AE6868 !important;
+}
+
+.ciq-night .stx_candle_shadow,
+.ciq-night .stx_bar_even {
+  color: #ccc;
+}
+.ciq-night .stx_candle_down,
+.ciq-night .stx_line_down {
+  border-left-color: #e34621;
+}
+/* .chartContainer {
+  background-color: #e62b2bbe !important;
+}  */
+.ciq-night .chartContainer{
+  background-color: #121213  !important;
+  border: none !important;
+}
+.ciq-nav,
+.ciq-footer {
+  background-color: #00000029 !important;
+  border: none !important;
+  /* display: none !important; */
+  height: 0px !important;
+} 
+
+.ciq-chart-area, cq-side-panel {
+ 
+  bottom: 0px !important;
+}
+.chartContainer .chart .stx_grid {
+  padding-bottom: 10px !important;
+  stroke: #ddd !important;
+}
+.chartContainer .chart .stx_grid {
+  color: #00000029 !important;
+  opacity: 1 !important;
+  border-style: solid !important;
+}
+.stx_grid_dark {
+  color: #b91010 !important;
+  opacity: 0.9;
+  border-style: solid;
+}
+.stx_grid_border {
+  color: #e91111 !important;
+  border-style: solid;
+}
+
+.ciq-night .stx_grid {
+  color: #21323f00 !important;
+}
+
+.ciq-night .stx_grid_dark {
+  color: #25374600 !important;
+}
+
+.stxMenuActive > cq-menu-dropdown,
+.stxMenuActive > * > cq-menu-dropdown {
+  background: rgba(33, 33, 36, 0.67);
+  
+
+  border: 1px solid #27272c;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(23px);
+}
+
+html:not([ciq-last-interaction=touch]) .ciq-night cq-study-legend[cq-hovershow] > cq-item:hover,
+html:not([ciq-last-interaction=touch]) .ciq-night cq-study-legend[cq-hovershow] cq-comparison-item:hover {
+  background: #212124;
+}
+
+html:not([ciq-last-interaction=touch]) .ciq-night cq-menu cq-item:hover, html[ciq-last-interaction=touch] .ciq-night cq-menu cq-item:active,
+.ciq-night cq-menu cq-item[cq-focused] {
+  background-color: #212124;
+  color: gray.100;
+}
+
+html:not([ciq-last-interaction=touch]) .ciq-night cq-item:hover, html:not([ciq-last-interaction=touch]) .ciq-night cq-item:focus, html[ciq-last-interaction=touch] .ciq-night cq-item:active,
+.ciq-night cq-item[cq-focused] {
+  background-color: #212124;
+  color: gray.100;
+}
+
+cq-toggle cq-tooltip,
+cq-clickable cq-tooltip,
+div[cq-toolbar-action] cq-tooltip,
+[cq-tooltip-activator] cq-tooltip,
+cq-undo-section .ciq-icon-btn cq-tooltip,
+cq-drawing-settings .ciq-icon-btn cq-tooltip {
+  border-radius: 5px;
+  border: 1px solid #27272c;
+  background: rgba(33, 33, 36, 0.67);
+  font-family: 'Poppins';
+  font-style: normal;
+  
+}
+
+html:not([ciq-last-interaction=touch]) cq-toggle:hover > *:not(.hide-outline), cq-toggle:active > *, html:not([ciq-last-interaction=touch]) cq-clickable[role=button]:hover > *:not(.hide-outline), cq-clickable[role=button]:active > * {
+  border: 1px solid #27272c;
+  
+}
+
+/* header */
+.ciq-night .ciq-nav{
+  background-color: #00000029 !important;
+  border: none !important;
+}
+.MuiTablePagination-displayedRows { /* Class generated from your code */
+  display: none;
+}

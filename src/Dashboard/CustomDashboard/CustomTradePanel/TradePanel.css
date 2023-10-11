@@ -1,0 +1,38 @@
+.build-command-btn {
+  /* font-family: "Courier Prime"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  transform: rotate(-90deg);
+  color: #dfb7ff;
+  position: absolute;
+  right: 12px;
+  bottom: 90px;
+  background: #0c080e;
+  padding: 7px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.MuiTableBody-root .MuiTypography-root.MuiTypography-body1 {
+  max-width: none !important;
+}
+
+.MuiPaper-root {
+  display: grid !important;
+}
+
+.close-icon {
+  /* right: -6%; */
+  /* top: 2px; */
+  right: 35%;
+  top: 60px;
+}
+/* .TradePanelContainer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+}
+.TradePanelContainer::-webkit-scrollbar {
+  display: none;
+} */
